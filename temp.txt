@@ -1,0 +1,11 @@
+
+RESERVATION DETAIL
+<b>date de depart: 14:00
+prix: 10000.21
+frome: turkey
+to: libya
+
+nom: aibi
+prenome: yassine
+email: aibiyassin8@gmail.com
+numero de telephone: 0644460187

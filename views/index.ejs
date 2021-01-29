@@ -1,0 +1,71 @@
+<%- include('header') -%>
+
+<div class="blank"></div>
+<section class="container">
+  <div class="section-home d-flex justify-content-center">
+    <div>
+      <div class="text-step font-weight-bold">Chercher</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-light part-child"></div>
+        </div>
+        <div class="bg-secondary step"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-step font-weight-bold">Choisir</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-secondary d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-light part-child"></div>
+        </div>
+        <div class="bg-secondary step"></div>
+      </div>
+    </div>
+    <div>
+      <div class="text-step font-weight-bold">Réserver</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-secondary d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-light part-child"></div>
+        </div>
+        <div class="bg-secondary step"></div>
+      </div>
+    </div>
+    <div>
+      <div class="text-step font-weight-bold">Payer</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-secondary d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-light part-child"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="blank"></div>
+<main class="container">
+  <form class="select-home" method="POST">
+    <div class="form-group depart">
+      <select class="form-control" name="selectedFromDirection" id="list" onchange="getSelectValue();">
+        <% for(var i = 0; i< ListOfVols.length; i++) { %>
+          <option value="<%= ListOfVols[i].id %>"><%= ListOfVols[i].frome %></option>
+        <% } %>
+      </select>
+    </div>
+    <div class="form-group arrive">
+      <select class="form-control" id="arrive" name="selectedToDirection">
+        <option id="toCountry"></option>
+      </select>
+    </div>
+    <input type="submit" class="btn btn-primary submit-select-home" value="Chercher">
+  </form>
+</main>
+
+<%- include('footer') -%>

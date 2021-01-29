@@ -1,0 +1,216 @@
+body {
+  min-width: 320px;
+}
+
+.blank {
+  height: 50px;
+}
+
+.logo {
+  height: 60px !important;
+}
+
+.section-home {
+  width: 80%;
+  margin: auto;
+}
+
+.section-home .part-parent {
+  height: 40px;
+  width: 40px;
+}
+
+.section-home .part-parent .part-child {
+  width: 25px;
+  height: 25px;
+}
+
+.section-home .step {
+  width: 200px;
+  height: 8px;
+}
+
+.section-home .text-step {
+  font-size: 20px;
+}
+
+.select-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-home .depart,
+.select-home .arrive {
+  width: 45%;
+  margin: 0 10px;
+}
+
+.vol {
+  height: 220px;
+}
+
+.vol .vol-logo {
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+}
+
+.vol .vol-info {
+  width: 50%;
+}
+
+.vol .vol-info span {
+  font-size: 18px;
+}
+
+.vol .vol-info .vol-destination {
+  height: 8px;
+  width: 90%;
+  margin: auto;
+}
+
+.vol .vol-info .vol-time {
+  font-size: 30px;
+}
+
+.vol .vol-price {
+  width: 25%;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+.vol .vol-price form span {
+  font-size: 39px;
+}
+
+.choice-place .place-options div span {
+  width: 110px;
+}
+
+.choice-place .place-options div .place-non-dispo,
+.choice-place .place-options div .place-dispo {
+  width: 60px;
+  height: 40px;
+}
+
+.choice-place .choice-my-place .wing {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.choice-place .choice-my-place div div {
+  padding: 0 !important;
+}
+
+.choice-place .choice-my-place div div .myplace {
+  width: 20%;
+  margin: 2.5%;
+}
+
+.choice-place .choice-my-place div div .myplace label {
+  width: 100%;
+  height: 40px;
+}
+
+.choice-place .choice-my-place div div .myplace .styledRadio {
+  display: none;
+}
+
+.choice-place .choice-my-place div div .myplace .styledRadio:checked + label {
+  background-color: #dc3545 !important;
+}
+
+@media (max-width: 1024px) {
+  .step {
+    width: 150px !important;
+    height: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .step {
+    width: 110px !important;
+    height: 8px;
+  }
+  .vol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto !important;
+  }
+  .vol .vol-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100% !important;
+  }
+  .vol .vol-logo {
+    width: 100% !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 200px;
+    display: none;
+  }
+  .vol .vol-price {
+    width: 100% !important;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .step {
+    width: 60px !important;
+    height: 8px;
+  }
+  .part-parent {
+    height: 35px !important;
+    width: 35px !important;
+  }
+  .part-parent .part-child {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .section-home .text-step {
+    font-size: 15px;
+  }
+  .select-home {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .select-home .depart,
+  .select-home .arrive {
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .step {
+    width: 40px !important;
+    height: 8px;
+  }
+  .section-home .text-step {
+    font-size: 10px;
+  }
+}
+
+.success_message {
+  color: gray;
+  text-align: center;
+  margin-top: 8%;
+  padding: 2%;
+  background-color: aliceblue;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+<%- include('header'); -%>
+
+<div class="blank"></div>
+<section class="container">
+  <div class="section-home d-flex justify-content-center">
+    <div>
+      <div class="text-step font-weight-bold">Chercher</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-danger part-child"></div>
+        </div>
+        <div class="bg-danger step"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-step font-weight-bold">Choisir</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-danger part-child"></div>
+        </div>
+        <div class="bg-danger step"></div>
+      </div>
+    </div>
+    <div>
+      <div class="text-step font-weight-bold">Réserver</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-danger part-child"></div>
+        </div>
+        <div class="bg-danger step"></div>
+      </div>
+    </div>
+    <div>
+      <div class="text-step font-weight-bold">Payer</div>
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+        >
+          <div class="rounded-circle bg-light part-child"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="blank"></div>
+<main class="container">
+  <div class="d-flex">
+    <div class="rounded border border-dark overflow-hidden mr-2 w-50">
+        <div class="w-100 bg-light p-4 text-center">
+          <h6 class="text-muted">DETAILE DE COMMANDE</h6>
+        </div>
+        <div class="d-flex flex-column px-5 py-2">
+          <span class="font-weight-bold">Trajet: </span>
+          <% for(i = 0; i < rowOneInfo.length; i++) { %>
+            <p><%= rowTwoInfo[i].frome %> to <%= rowTwoInfo[i].to %> <%= rowOneInfo[i].dipartTime %></p>
+          <% } %>
+          <br />
+          <span class="font-weight-bold">Montant: </span>
+          <% for(i = 0; i < rowOneInfo.length; i++) { %>
+            <p><%= rowOneInfo[i].prix %></p>
+          <% } %>
+        </div>
+      </div>
+      <div class="rounded border border-dark overflow-hidden ml-2 w-50">
+        <div class="w-100 bg-light p-4 text-center">
+          <h6 class="text-muted">Information de client</h6>
+        </div>
+        <div class="d-flex flex-column px-5 py-2">
+          <span class="font-weight-bold">Votre Email: </span>
+          <p><%=email %></p>
+          <br />
+          <span class="font-weight-bold">numero de telephone: </span>
+          <p><%=phone %></p>
+        </div>
+      </div>
+  </div>
+  <form method="POST">
+    <input type="submit" class="btn btn-primary btn-block px-5 mt-4 mx-auto" value="Valider le paiement">
+  </form>
+</main>
+<div class="blank"></div>
+
+<%- include('footer'); -%>

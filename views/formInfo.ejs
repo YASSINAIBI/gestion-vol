@@ -1,0 +1,79 @@
+<%- include('header'); -%>
+
+    </nav>
+    <div class="blank"></div>
+    <section class="container">
+      <div class="section-home d-flex justify-content-center">
+        <div>
+          <div class="text-step font-weight-bold">Chercher</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-danger part-child"></div>
+            </div>
+            <div class="bg-danger step"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-step font-weight-bold">Choisir</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-danger part-child"></div>
+            </div>
+            <div class="bg-danger step"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text-step font-weight-bold">Réserver</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-light part-child"></div>
+            </div>
+            <div class="bg-secondary step"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text-step font-weight-bold">Payer</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-secondary d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-light part-child"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="blank"></div>
+    <main class="container">
+      <form method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Nom" placeholder="Nom ..." name="nom" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Prenom">Prénom</label>
+            <input type="text" class="form-control" id="Prenom" placeholder="Prénom ..." name="prenom" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" id="Email" placeholder="Email ..." name="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Numéro de téléphone</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Numéro de téléphone ..." name="phone" />
+        </div>
+        <input type="submit" class="btn btn-primary btn-block px-5" value="Payer">
+      </form>
+    </main>
+    <div class="blank"></div>
+
+<%- include('footer'); -%>

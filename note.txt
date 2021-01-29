@@ -1,0 +1,20 @@
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+  req.session.selectedDirection
+  req.session.all_vol_place
+
+  req.session.vol_number
+
+  SELECT * FROM `list_of_vol_place` WHERE valable = 0
+
+  req.session.nom
+  req.session.prenom
+  req.session.email
+  req.session.phone
+
+  req.session.dipartTime
+  req.session.prix
+  req.session.frome
+  req.session.to
+  

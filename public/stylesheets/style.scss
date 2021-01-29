@@ -1,0 +1,200 @@
+body {
+    min-width: 320px;
+  }
+  
+  .blank {
+    height: 50px;
+  }
+  
+  .logo {
+    height: 60px !important;
+  }
+  
+  //home
+  
+  .section-home {
+    width: 80%;
+    margin: auto;
+    .part-parent {
+      height: 40px;
+      width: 40px;
+  
+      .part-child {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .step {
+      width: 200px;
+      height: 8px;
+    }
+    .text-step {
+      font-size: 20px;
+    }
+  }
+  
+  // vols
+  
+  .select-home {
+    display: flex;
+    .depart,
+    .arrive {
+      width: 45%;
+      margin: 0 10px;
+    }
+  }
+  
+  .vol {
+    height: 220px;
+    .vol-logo {
+      background-position: center;
+      background-size: cover;
+      width: 25%;
+    }
+    .vol-info {
+      width: 50%;
+      span {
+        font-size: 18px;
+      }
+      .vol-destination {
+        height: 8px;
+        width: 90%;
+        margin: auto;
+      }
+      .vol-time {
+        font-size: 30px;
+      }
+    }
+    .vol-price {
+      width: 25%;
+      border-bottom-right-radius: 50px;
+      overflow: hidden;
+      form {
+        span {
+          font-size: 39px;
+        }
+      }
+    }
+  }
+  
+  // choisir
+  
+  .choice-place {
+    .place-options {
+      div {
+        span {
+          width: 110px;
+        }
+        .place-non-dispo,
+        .place-dispo {
+          width: 60px;
+          height: 40px;
+        }
+      }
+    }
+    .choice-my-place {
+      .wing {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      div {
+        div {
+          padding: 0 !important;
+          .myplace {
+            label {
+              width: 100%;
+              height: 40px;
+            }
+            width: 20%;
+            margin: 2.5%;
+            .styledRadio {
+              display: none;
+              &:checked + label {
+                background-color: #dc3545 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .step {
+      width: 150px !important;
+      height: 8px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .step {
+      width: 110px !important;
+      height: 8px;
+    }
+    .vol {
+      flex-direction: column;
+      height: auto !important;
+      .vol-info {
+        order: 1;
+        width: 100% !important;
+      }
+      .vol-logo {
+        width: 100% !important;
+        order: 2;
+        height: 200px;
+        display: none;
+      }
+      .vol-price {
+        width: 100% !important;
+        order: 3;
+        height: 200px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .step {
+      width: 60px !important;
+      height: 8px;
+    }
+  
+    .part-parent {
+      height: 35px !important;
+      width: 35px !important;
+  
+      .part-child {
+        width: 20px !important;
+        height: 20px !important;
+      }
+    }
+    .section-home .text-step {
+      font-size: 15px;
+    }
+    .select-home {
+      display: flex !important;
+      flex-direction: column !important;
+      .depart,
+      .arrive {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+      }
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .step {
+      width: 40px !important;
+      height: 8px;
+    }
+    .section-home .text-step {
+      font-size: 10px;
+    }
+  }
+  
+  .success_message {
+    color: gray;
+    text-align: center;
+    margin-top: 8%;
+    padding: 2%;
+    background-color: aliceblue;
+  }
